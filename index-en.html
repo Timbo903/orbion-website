@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbion - WordPress Services</title>
+    <meta name="description" content="Modern WordPress website creation. Check out my projects and send an inquiry.">
+    <meta name="author" content="Orbion">
+    <link rel="icon" href="/assets/images/orbion-logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="/assets/images/orbion-logo.jpg" alt="Orbion Logo" width="60" height="60">
+                <h1>Orbion</h1>
+            </div>
+            
+            <div class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" class="lang-btn">Sl</a>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Modern WordPress Websites</h1>
+                <p>Fast, professional, and tailored to your needs. Check out my projects and send an inquiry today.</p>
+                <a href="#contact" class="cta-button">Send Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Why Choose Orbion?</h2>
+            <p>At Orbion, we combine aesthetics, technology, and simplicity. Every website is designed to stand out, work flawlessly, and be easy to manage yourself.</p>
+
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Speed & Efficiency</h3>
+                    <p>We create your website quickly so you can start promoting your business immediately without unnecessary waiting.</p>
+                </div>
+                <div class="card">
+                    <h3>Professional Design</h3>
+                    <p>Modern, minimalist, and custom visual style that attracts your visitors and builds trust.</p>
+                </div>
+                <div class="card">
+                    <h3>Easy Maintenance</h3>
+                    <p>WordPress allows you to manage content easily – add updates yourself without special knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="/assets/images/about-image.jpg" alt="Orbion team / WordPress design">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>From start to finish – we create your WordPress website professionally and tailored to your needs.</p>
+
+        <div class="services-cards">
+            <div class="service-card">
+                <h3>WordPress Website Development</h3>
+                <p>Modern and responsive design, optimized for fast loading and excellent user experience.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Design Customization</h3>
+                <p>We adapt themes and functionality to match your vision and brand.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>SEO & Optimization</h3>
+                <p>Your website will be fast, search engine optimized, and ready for visitors.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Maintenance & Support</h3>
+                <p>Regular WordPress, plugin, and security updates for worry-free usage.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <p>Check out some WordPress websites I have created.</p>
+
+        <a href="https://lazanu.com" target="_blank" class="project-link">
+            <div class="project-card">
+                <img src="/assets/images/lazanu-site.png" alt="Project 1 - WordPress design">
+                <div class="project-overlay">
+                    <h3>Lažanu</h3>
+                    <p>Business website for wedding planning company Lažanu</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#index-en.html" target="_blank" class="project-link">
+            <div class="project-card">
+                <img src="/assets/images/orbion-site.png" alt="Project 2 - WordPress design">
+                <div class="project-overlay">
+                    <h3>Orbion</h3>
+                    <p>Our business website</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Send an inquiry and I will get back to you as soon as possible.</p>
+
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
+            <!-- Hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="contact">
+
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Orbion. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: rgba(21, 28, 37, 0.979);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: Orbitron, sans-serif;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.lang-btn{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transform: translateX(270px);
+}
+
+.nav {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #c7dbf8;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1a1a2e;
+}
+
+.cta-button {
+  display: inline-block;  /* ← dodano */
+  background: #0099cc98;
+
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;       /* margin zdaj deluje */
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0066ff46;
+}
+
+/* Small / responsive variant */
+.cta-button.small {
+  padding: 10px 25px;
+  font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: #0f172a; /* dark futuristic background */
+  color: white;
+}
+
+.about-content {
+  flex: 1 1 500px;
+  max-width: 600px;
+  margin-right: 40px;
+}
+
+.about h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-cards .card {
+  background: rgba(255, 255, 255, 0.05); /* semi-transparent futuristic card */
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 180px;
+  transition: transform 0.3s;
+}
+
+.about-cards .card:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 255, 0.1); /* subtle neon hover */
+}
+
+.about-cards h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-cards p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+/* Services Section */
+.services {
+  padding: 80px 20px;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(0, 255, 255, 0.15);
+}
+
+.service-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 80px 200px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+/* Grid layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Project card */
+.project-card {
+    margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 54, 54, 0.808);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-overlay p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+}
+
+.project-link {
+  text-decoration: none; /* odstrani underline */
+  display: block;        /* da pokrije celotno kartico */
+  color: inherit;        /* obdrži barve besedila */
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 20px;
+  background: #0f172a; 
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #0066ff;
+}
+
+.contact-form button.cta-button {
+  margin-top: 20px; /* oddaljen od textarea */
+  width: fit-content;
+  align-self: center;
+}
+
+footer {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+}
