@@ -122,15 +122,16 @@
   <h2>Kontaktiraj nas</h2>
   <p>Pošlji povpraševanje in odgovorili ti bom v najkrajšem možnem času.</p>
 
-  <form name="contact" method="POST" data-netlify="true" class="contact-form">
-    <!-- Hidden input required by Netlify -->
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" id="name" name="name" placeholder="Ime" required>
-    <input type="email" id="email" name="email" placeholder="Email" required>
-    <textarea id="message" name="message" placeholder="Tvoje sporočilo" rows="5" required></textarea>
+    <form name="contact" method="POST" data-netlify="true" action="/zahvala.html" class="contact-form">
+            <!-- Hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="contact">
 
-    <button type="submit" class="cta-button">Pošlji</button>
-  </form>
+            <input type="text" id="name" name="name" placeholder="Ime" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Sporočilo" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Pošlji</button>
+        </form>
 </section>
 
     <footer>
