@@ -128,7 +128,10 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #1a1a2e;
+    background-image: url('./assets/images/Hyplux_Ozadje.jpg');
+    background-size: cover;
+    background-position: center -63px;
+    background-attachment: fixed;
 }
 
 .cta-button {
