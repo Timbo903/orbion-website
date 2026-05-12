@@ -291,7 +291,7 @@ header {
 
 /* Portfolio Section */
 .portfolio {
-  padding: 80px 200px;
+  padding: 80px 400px;
   background: #0f172a;
   color: white;
   text-align: center;
@@ -324,13 +324,14 @@ header {
     border-radius: 12px;
     cursor: pointer;
     transition: transform 0.3s;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 9;
 }
 
 .project-card img {
     width: 100%;
     display: block;
     transition: transform 0.5s;
+    position: center;
 }
 
 .project-card:hover img {

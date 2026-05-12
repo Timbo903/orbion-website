@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyplux - WordPress Storitve</title>
     <meta name="description" content="Izdelava modernih WordPress spletnih strani. Oglej si moje projekte in pošlji povpraševanje.">
     <meta name="author" content="Hyplux">
+    
+    <!-- Favicons - Multipli formati za boljšo kompatibilnost -->
     <link rel="icon" href="/assets/images/orbion-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/images/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-180.png">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (Schema.org) - za Google Search rezultate -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hyplux",
+        "url": "https://hyplux.com",
+        "logo": "https://hyplux.com/assets/images/orbion-logo.svg",
+        "description": "Izdelava modernih WordPress spletnih strani",
+        "sameAs": [
+            "https://instagram.com/hyplux",
+            "https://instagram.com/hyperluxe_"
+        ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -105,7 +129,7 @@
 
         <a href="https://lazanu.com" target="_blank" class="project-link">
             <div class="project-card">
-                <img src="/assets/images/lazanu-site.png" alt="Projekt 1 - WordPress design">
+                <img src="/assets/images/Lazanu_Mockup.png" alt="Projekt 1 - WordPress design">
                 <div class="project-overlay">
                 <h3>Lažanu</h3>
                 <p>Poslovna spletna stran za poročno organizacijo Lažanu</p>
@@ -115,7 +139,7 @@
 
         <a href="#index.html" target="_blank" class="project-link">
             <div class="project-card">
-                <img src="/assets/images/orbion-site.png" alt="Projekt 1 - WordPress design">
+                <img src="/assets/images/Hyplux_Mockup.png" alt="Projekt 1 - WordPress design">
                 <div class="project-overlay">
                     <h3>Hyplux</h3>
                     <p>Naša poslovna spletna stran</p>
@@ -125,23 +149,26 @@
     </section>
 
     <section id="contact" class="contact">
-  <h2>Kontaktiraj nas</h2>
-  <p>Pošlji povpraševanje in odgovorili vam bomo v najkrajšem možnem času.</p>
+        <h2>Kontaktiraj nas</h2>
+        <p>Pošlji povpraševanje in odgovorili vam bomo v najkrajšem možnem času.</p>
 
-    <form name="contact" method="POST" data-netlify="true" action="/zahvala.html" class="contact-form">
-            <!-- Hidden input for Netlify -->
-            <input type="hidden" name="form-name" value="contact">
+        <form name="contact" method="POST" data-netlify="true" action="/zahvala.html" class="contact-form">
+                <!-- Hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="contact">
 
-            <input type="hidden" name="subject" data-remove-prefix 
-            value="Povpraševanje od %{name}" />
+                <input type="hidden" name="subject" data-remove-prefix 
+                value="Povpraševanje od %{name}" />
 
-            <input type="text" id="name" name="name" placeholder="Ime" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" placeholder="Sporočilo" rows="5" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Ime" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Sporočilo" rows="5" required></textarea>
 
-            <button type="submit" class="cta-button">Pošlji</button>
+                <button type="submit" class="cta-button">Pošlji</button>
         </form>
-</section>
+        <p style="margin-top: 30px; font-size: 0.95rem;">
+            Ali nas direktno kontaktiraj na:<br><br> mail: <strong>info@hyplux.com</strong> <br><br> telefon: <strong>+386 70 254 442</strong>
+        </p>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
