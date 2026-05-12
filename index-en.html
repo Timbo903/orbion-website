@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyplux - WordPress Services</title>
-    <meta name="description" content="Modern WordPress website creation. Check out my projects and send an inquiry.">
+    <title>Hyplux - WordPress Storitve</title>
+    <meta name="description" content="Modern WordPress website creation. View our projects and send an inquiry.">
     <meta name="author" content="Hyplux">
+    <meta name="keywords" content="WordPress, websites, web design, slovenia, hyplux">
+
+    <!-- Open Graph (Facebook, LinkedIn, itd.) -->
+    <meta property="og:title" content="Hyplux - WordPress Storitve">
+    <meta property="og:description" content="Modern WordPress website creation. View our projects and send an inquiry.">
+    <meta property="og:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
+    <meta property="og:url" content="https://hyplux.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hyplux - WordPress Storitve">
+    <meta name="twitter:description" content="Modern WordPress website creation. View our projects and send an inquiry.">
+    <meta name="twitter:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
+
+    <!-- Canonical tag (prepreči duplicate content) -->
+    <link rel="canonical" href="https://hyplux.com/">
+
+    <!-- hreflang (za angleško verzijo) -->
+    <link rel="alternate" hreflang="sl" href="https://hyplux.com/">
     
     <!-- Favicons - Multiple formats for better compatibility -->
     <link rel="icon" href="/assets/images/orbion-logo.svg" type="image/svg+xml">
@@ -41,7 +62,7 @@
         <div class="nav">
             <div class="logo">
                 <img src="/assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40">
-                <h1>Hyplux</h1>
+                <span>Hyplux</span>
             </div>
             
             <button class="hamburger" id="hamburger">
@@ -130,17 +151,17 @@
 
         <a href="https://lazanu.com" target="_blank" class="project-link">
             <div class="project-card">
-                <img src="/assets/images/lazanu-site.png" alt="Project 1 - WordPress design">
+                <img src="/assets/images/Lazanu_Mockup.png" alt="Project 1 - WordPress design">
                 <div class="project-overlay">
-                    <h3>Lažanu</h3>
-                    <p>Business website for wedding planning company Lažanu</p>
+                <h3>Lažanu</h3>
+                <p>Business website for wedding planning company Lažanu</p>
                 </div>
             </div>
         </a>
 
         <a href="#index-en.html" target="_blank" class="project-link">
             <div class="project-card">
-                <img src="/assets/images/orbion-site.png" alt="Project 2 - WordPress design">
+                <img src="/assets/images/Hyplux_Mockup.png" alt="Project 2 - WordPress design">
                 <div class="project-overlay">
                     <h3>Hyplux</h3>
                     <p>Our business website</p>
@@ -153,19 +174,22 @@
         <h2>Contact Us</h2>
         <p>Send an inquiry and we will get back to you as soon as possible.</p>
 
-        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
-            <!-- Hidden input for Netlify -->
-            <input type="hidden" name="form-name" value="contact">
+        <form name="contact" method="POST" data-netlify="true" action="/zahvala.html" class="contact-form">
+                <!-- Hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="contact">
 
-            <input type="hidden" name="subject" data-remove-prefix 
-            value="Povpraševanje od %{name}" />
+                <input type="hidden" name="subject" data-remove-prefix 
+                value="Inquiry from %{name}" />
 
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
 
-            <button type="submit" class="cta-button">Send</button>
+                <button type="submit" class="cta-button">Send</button>
         </form>
+        <p style="margin-top: 30px; font-size: 0.95rem;">
+            Contact us directly at:<br><br> email: <strong>info@hyplux.com</strong> <br><br> phone: <strong>+386 70 254 442</strong>
+        </p>
     </section>
 
     <footer class="footer">
