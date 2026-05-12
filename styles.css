@@ -709,11 +709,12 @@ header {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 27px;
     }
 
     .logo img {
-        width: 45px;
-        height: 45px;
+        width: 30px;
+        height: 30px;
     }
 
     .logo h1 {
