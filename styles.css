@@ -49,6 +49,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .navbar {
@@ -690,7 +692,7 @@ header {
 /* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
     header {
-        padding: 30px 15px;
+        padding: 0 1px;
         justify-content: space-between;
         align-items: center;
         min-height: 80px;
