@@ -85,7 +85,7 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Izdelava modernih WordPress spletnih strani</h1>
+                <h1>Izdelava modernih spletnih strani</h1>
                 <p>Hitro, profesionalno in prilagojeno tvojim potrebam. Oglejte si naše projekte in pošljite povpraševanje še danes.</p>
                 <a href="#contact" class="cta-button">Pošlji povpraševanje</a>
             </div>
@@ -119,7 +119,7 @@
 
     <section id="services" class="services">
         <h2>Naše storitve</h2>
-        <p>Od začetka do konca – pripravimo vašo WordPress stran profesionalno in prilagojeno vašim potrebam.</p>
+        <p>Od začetka do konca – pripravimo vašo stran profesionalno in prilagojeno vašim potrebam.</p>
 
         <div class="services-cards">
             <div class="service-card">
@@ -128,13 +128,13 @@
             </div>
 
             <div class="service-card">
-            <h3>Prilagoditev dizajna</h3>
-            <p>Prilagodimo temo in funkcionalnosti tako, da ustrezajo vaši viziji in brandu.</p>
+            <h3>Custom coded spletne strani</h3>
+            <p>Hitre in moderne spletne strani izdelane s programiranjem brez WordPressa.</p>
             </div>
 
             <div class="service-card">
             <h3>SEO in optimizacija</h3>
-            <p>Vaša stran bo hitra, optimizirana za iskalnike in pripravljena na obiskovalce.</p>
+            <p>Osnovna optimizacija strani za boljše pozicije na Googlu.</p>
             </div>
 
             <div class="service-card">
@@ -213,52 +213,7 @@
         <p class="footer-copy">&copy; 2024 Hyplux. Vse pravice pridržane.</p>
     </footer>
 
-    <script>
-  const form = document.querySelector('form[name="contact"]');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // prepreči reload strani
-
-    const formData = new FormData(form);
-
-    fetch("/", {
-      method: "POST",
-      body: formData
-    })
-    .then(() => {
-      // skrij formo
-      form.style.display = 'none';
-
-      // pokaži sporočilo zahvale
-      const thankYou = document.createElement('div');
-      thankYou.className = 'thank-you-message';
-      thankYou.innerHTML = `
-        <h3>Hvala za vaše povpraševanje!</h3>
-        <p>Odgovorili ti bomo v najkrajšem možnem času.</p>
-      `;
-      form.parentNode.appendChild(thankYou);
-    })
-    .catch((error) => alert('Oops! Nekaj je šlo narobe: ' + error));
-  });
-
-  // Hamburger Menu Toggle
-  const hamburger = document.getElementById('hamburger');
-  const navbar = document.getElementById('navbar');
-
-  hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('active');
-    navbar.classList.toggle('active');
-  });
-
-  // Close navbar when a link is clicked
-  const navLinks = navbar.querySelectorAll('a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      hamburger.classList.remove('active');
-      navbar.classList.remove('active');
-    });
-  });
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>
