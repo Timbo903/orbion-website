@@ -4,12 +4,24 @@
     font-weight: 100 900;
 }
 
+@font-face {
+    font-family: 'Orbitron-SL-black';
+    src: url('./assets/fonts/Orbitron-Black-slovenian.woff2') format('woff2');
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Orbitron-SL-bold';
+    src: url('./assets/fonts/Orbitron-Bold-slovenian.woff2') format('woff2');
+    font-weight: 100 900;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 h1 {
-  font-family: 'Orbitron-SL', sans-serif;
+  font-family: 'Orbitron-SL-black', sans-serif;
   font-weight: 200;
 }
 
@@ -232,7 +244,7 @@ header {
 }
 
 .about-cards h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron-SL-bold', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -266,7 +278,7 @@ header {
 }
 
 .services h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron-SL-black', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
@@ -299,7 +311,7 @@ header {
 }
 
 .service-card h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron-SL-bold', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
@@ -312,14 +324,14 @@ header {
 
 /* Portfolio Section */
 .portfolio {
-  padding: 80px 20px;
+  padding: 80px 400px;
   background: #0f172a;
   color: white;
   text-align: center;
 }
 
 .portfolio h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron-SL-bold', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
@@ -384,7 +396,7 @@ header {
 }
 
 .project-overlay h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron-SL-bold', sans-serif;
     font-size: 1.5rem;
     margin: 0;
     line-height: 1.2;
@@ -542,7 +554,7 @@ header {
 }
  
 .services-choices h2 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron-SL-bold', sans-serif;
     font-size: 2.5rem;
     color: #ffffff;
     text-align: center;
@@ -599,7 +611,7 @@ header {
 }
  
 .choice-card h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron-SL-bold', sans-serif;
     font-size: 1.5rem;
     color: #ffffff;
     margin: 0 0 15px 0;
@@ -678,7 +690,7 @@ header {
 }
  
 .why-hyplux h2 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron-SL-bold', sans-serif;
     font-size: 2.5rem;
     color: #ffffff;
     text-align: center;
@@ -724,7 +736,7 @@ header {
 }
  
 .why-item h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron-SL-bold', sans-serif;
     font-size: 1.3rem;
     color: #ffffff;
     margin: 0 0 15px 0;
