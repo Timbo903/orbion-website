@@ -1,6 +1,6 @@
 [build]
   base = "hyplux.com"
-  publish = "hyplux.com"
+  publish = "."
   command = ""
 
 [[redirects]]
