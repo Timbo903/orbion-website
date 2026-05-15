@@ -40,10 +40,16 @@ body {
     padding: 20px;
 }
 
+.container h2 {
+    font-family: 'Orbitron-SL-bold', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
 header {
     display: flex;
     align-items: center;
-    font-family: Orbitron, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     justify-content: center;
     background-color: black;
     padding: 10px 20px;
@@ -161,10 +167,38 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/Hyplux_Ozadje_Temnejše.jpg');
+    background-image: url('./assets/images/NovejseOzadje.png');
     background-size: cover;
-    background-position: center -63px;
+    background-position: center +65%;
     background-attachment: fixed;
+}
+
+.hero-storitve {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('./assets/images/Hyplux_Ozadje_Pikice_TemnoVijolično.png');
+    background-size: cover;
+    background-position: center -130%;
+    background-attachment: fixed;
+}
+
+.hero-o-nas {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('./assets/images/NovoOzadje.png');
+    background-size: cover;
+    background-position: center +65%;
+    background-attachment: fixed;
+}
+
+.hero-kontakt {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('./assets/images/NovoOzadje.png');
+    background-size: cover;
+    background-position: center -130%;
+    background-attachment: fixed;
+    min-height: 210px;
 }
 
 .cta-button {
@@ -286,10 +320,10 @@ header {
 .services p {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
-  margin-bottom: 50px;
 }
 
 .services-cards {
+    margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1061,7 +1095,7 @@ header {
     }
 
     .hero {
-        padding: 60px 15px;
+        padding: 60px 5px;
     }
 
     .hero-content h1 {
@@ -1118,6 +1152,7 @@ header {
         max-width: 400px;
         padding: 20px;
         box-sizing: border-box;
+        max-height: 180px;
     }
 
     .service-card h3 {
@@ -1217,7 +1252,7 @@ header {
     }
 
     .services-choices {
-        padding: 60px 15px;
+        padding: 60px 5px;
     }
 
     .choices-grid {
@@ -1272,3 +1307,345 @@ header {
     }
 }
 
+
+
+/* O-NAS */
+
+.kdo-smo {
+    background-color: #0a203d;
+    padding: 80px 200px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container-half {
+    flex: 1;
+    padding: 40px;
+}
+
+.container-half img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
+    align-self: center;
+    padding: 30px 0px;
+}
+
+.container-half h2 {
+    font-family: 'Orbitron-SL-bold', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+
+.why-hyplux-section {
+    padding: 80px 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                      url(./assets/images/nazmi-javier-qB5FRk87w1g-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.why-hyplux-section h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #c7dbf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -1px;
+}
+ 
+.why-hyplux-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+ 
+.why-hyplux-card {
+    background: rgba(25, 26, 46, 0.9);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+}
+ 
+.why-hyplux-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.8), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+ 
+.why-hyplux-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top-right, rgba(99, 102, 241, 0.08), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+ 
+.why-hyplux-card:hover {
+    border-color: rgba(99, 102, 241, 0.4);
+    background: rgba(25, 26, 46, 0.7);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.1);
+}
+ 
+.why-hyplux-card:hover::before,
+.why-hyplux-card:hover::after {
+    opacity: 1;
+}
+ 
+.why-hyplux-icon-container {
+    width: 56px;
+    height: 56px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1.5px solid rgba(99, 102, 241, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+ 
+ 
+.why-hyplux-icon-container svg {
+    width: 28px;
+    height: 28px;
+    stroke: rgba(99, 102, 241, 0.8);
+    fill: none;
+    stroke-width: 1.5;
+}
+ 
+.why-hyplux-card h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    position: relative;
+    z-index: 1;
+}
+ 
+.why-hyplux-card p {
+    font-size: 0.95rem;
+    color: #a8bce8;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+}
+ 
+@media (max-width: 768px) {
+    .why-hyplux-section {
+        padding: 60px 0;
+    }
+ 
+    .why-hyplux-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+ 
+    .why-hyplux-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+ 
+    .why-hyplux-card {
+        padding: 30px;
+    }
+ 
+    .why-hyplux-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+.process {
+    padding: 80px 200px;
+    background-color: #0c1222;
+}
+
+.hxs-wrap{
+    padding:60px 40px;
+    background:#0c1222;
+    font-family: 'Orbitron-SL-black', sans-serif;
+}
+
+.hxs-label{
+    font-size:11px;
+    letter-spacing:0.2em;
+    color:#074aad;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.hxs-h2{
+    font-size:2rem;
+    font-weight:700;
+    color:#ffffff;
+    margin:0 0 56px;
+    line-height:1.2;
+}
+
+.hxs-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;position:relative;
+}
+
+.hxs-line{
+    position:absolute;
+    top:38px;
+    left:calc(12.5% + 8px);
+    right:calc(12.5% + 8px);
+    height:1px;
+    background:linear-gradient(90deg,#0066ff 0%,#00c3ff 100%);
+    opacity:0.4;
+    z-index:0;
+}
+.hxs-card{
+    position:relative;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:0 16px;
+}
+.hxs-num-wrap{
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    border:1.5px solid #0066ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:24px;
+    background:#0c1222;
+    position:relative;
+}
+.hxs-num-wrap::before{
+    content:'';
+    position:absolute;
+    inset:-6px;
+    border-radius:50%;
+    border:1px solid rgba(0,102,255,0.2);
+}
+.hxs-num{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#00c3ff;
+    font-family:monospace;
+}
+.hxs-title{
+    font-size:0.95rem;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:10px;
+    letter-spacing:0.04em;
+}
+.hxs-desc{
+    font-size:0.82rem;
+    color:rgba(255,255,255,0.5);
+    line-height:1.6;
+}
+@media(max-width:600px){
+    .hxs-grid{
+        grid-template-columns:1fr 1fr;
+        gap:32px 0;
+    }
+    .hxs-line{
+        display:none;
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 12px;
+    padding: 80px;
+}
+
+
+
+
+.contact-section {
+    display: flex;
+    padding: 190px 200px;
+    justify-content: center;
+    gap: 30px;
+    background-color: #212138;
+}
+
+.form-section {
+    width: 500px;
+}
+
+.form-section h2 {
+    font-family: 'Orbitron-SL-bold', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgb(94, 94, 94);
+    padding-left: 30px;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    color: white;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-icon:hover {
+    transform: translateY(-4px);
+    background: rgba(99,102,241,0.15);
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 10px 30px rgba(99,102,241,0.2);
+}

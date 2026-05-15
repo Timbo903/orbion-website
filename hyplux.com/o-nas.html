@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Izdelava spletnih strani | WordPress & Custom Code | Hyplux</title>
-    <meta name="description" content="Potrebujete hitro in varno spletno stran? Hyplux nudi profesionalno izdelavo WordPress strani in unikatnih custom code rešitev za maksimalen SEO uspeh.">
+    <title>O nas - Hyplux</title>
+    <meta name="description" content="Spoznaj Hyplux timčino. Kako smo se začeli, kaj počnemo in zakaj ljubimo web development.">
     <meta name="author" content="Hyplux">
-    <meta name="keywords" content="wordpress storitve, custom code, spletne strani, web development, slovenia">
+    <meta name="keywords" content="o nas, hyplux, tim, web development, wordpress, slovenia">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Storitve | Hyplux - WordPress in Custom Code">
-    <meta property="og:description" content="Profesionalna izdelava WordPress strani in custom spletnih rešitev.">
+    <!-- Open Graph (Facebook, LinkedIn, itd.) -->
+    <meta property="og:title" content="O nas - Hyplux">
+    <meta property="og:description" content="Spoznaj Hyplux timčino. Kako smo se začeli in kaj počnemo.">
     <meta property="og:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
-    <meta property="og:url" content="https://hyplux.com/storitve.html">
+    <meta property="og:url" content="https://hyplux.com/about.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="sl_SI">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Storitve | Hyplux">
-    <meta name="twitter:description" content="Profesionalna izdelava spletnih strani.">
+    <meta name="twitter:title" content="O nas - Hyplux">
+    <meta name="twitter:description" content="Spoznaj Hyplux timčino.">
     <meta name="twitter:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://hyplux.com/storitve.html">
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://hyplux.com/about.html">
 
-    <!-- hreflang -->
-    <link rel="alternate" hreflang="en" href="https://hyplux.com/en/services.html">
+    <!-- hreflang (za angleško verzijo) -->
+    <link rel="alternate" hreflang="en" href="https://hyplux.com/about-en.html">
     
     <!-- Favicons -->
     <link rel="icon" href="/assets/images/orbion-logo.svg" type="image/svg+xml">
@@ -39,41 +39,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Structured Data -->
+    <!-- Structured Data (Schema.org) - Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Izdelava spletnih strani",
-        "provider": {
-            "@type": "Organization",
-            "name": "Hyplux",
-            "url": "https://hyplux.com"
-        },
-        "description": "Profesionalna izdelava WordPress in custom spletnih strani",
-        "areaServed": "SI",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Storitve",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "WordPress spletne strani"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom Code rešitve"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hyplux",
+  "url": "https://hyplux.com",
+  "logo": "https://hyplux.com/assets/images/orbion-logo.svg",
+  "description": "Izdelava modernih spletnih strani (WordPress + custom code)",
+  "sameAs": [
+    "https://instagram.com/hyplux",
+    "https://github.com/yourprofile"
+  ]
+}
+</script>
     
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -81,8 +61,8 @@
     <header>
         <div class="nav">
             <div class="logo">
-                <a href="/"><img src="/hyplux.com/assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40"></a>
-                <span><a href="/hyplux.com/index.html">Hyplux</a></span>
+                <img src="./assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40">
+                <span><a href="index.html">Hyplux</a></span>
             </div>
             
             <button class="hamburger" id="hamburger">
@@ -93,132 +73,134 @@
             
             <div class="navbar" id="navbar">
                 <ul>
-                    <li><a href="/o-nas.html">O nas</a></li>
-                    <li><a href="/storitve.html">Storitve</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li><a href="/kontakt.html">Kontakt</a></li>
+                    <li><a href="./index.html">Domov</a></li>
+                    <li><a href="./o-nas.html">O nas</a></li>
+                    <li><a href="./storitve.html">Storitve</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
-        <a href="/en/services.html" class="lang-btn">En</a>
+        <a href="/en/index.html" class="lang-btn">En</a>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
+     <!-- Hero Section -->
+    <section class="hero-o-nas">
         <div class="container">
-            <h1>Profesionalna izdelava spletnih strani, prilagojena vašim ciljem</h1>
-            <p class="hero-subtitle">Ne izdelujemo le spletnih strani. Gradimo vaša digitalna prodajna orodja. Pri <strong>Hyplux</strong> združujemo kreativni dizajn s tehnično dovršenostjo, da vaša stran ne bo le lepa, ampak bo dejansko prinašala nove stranke.</p>
-            <a href="/kontakt.html" class="cta-button">Pridobite brezplačno ponudbo</a>
+            <h1>Moderna digitalna ekipa za sodobne spletne strani.</h1>
+            <p class="hero-subtitle">V Hyplux pomagamo manjšim podjetjem in startupom ustvariti moderne, hitre in profesionalne spletne strani, ki pustijo močan prvi vtis.</p>
+            <a href="storitve.html" class="cta-button">Poglej storitve</a>
+            <a href="kontakt.html" class="cta-button">Kontaktiraj nas</a>
         </div>
     </section>
 
-    <!-- Izbira Rešitve Sekcija -->
-    <section class="services-choices">
-        <div class="container">
-            <h2>Izberite rešitev, ki ustreza vašemu podjetju</h2>
-            <p class="section-intro">Vemo, da vsako podjetje nima enakih potreb. Zato nudimo dva pristopa k razvoju:</p>
-            
-            <div class="choices-grid">
-                <!-- WordPress Rešitev -->
-                <div class="choice-card">
-                    <h3>WordPress spletne strani – Fleksibilnost in moč</h3>
-                    <p class="choice-intro">Idealna izbira za podjetja, ki želijo popolno kontrolo nad svojo vsebino, blogom in prodajo.</p>
-                    
-                    <div class="choice-features">
-                        <div class="feature">
-                            <h4>Popolna samostojnost</h4>
-                            <p>Vsebino (tekste, slike, objave) urejate preprosto, brez znanja programiranja.</p>
-                        </div>
-                        <div class="feature">
-                            <h4>Razširljivost</h4>
-                            <p>WordPress omogoča dodajanje naprednih funkcij, kot so spletne trgovine (WooCommerce), rezervacijski sistemi in večjezičnost.</p>
-                        </div>
-                        <div class="feature">
-                            <h4>Optimizirano za rast</h4>
-                            <p>Uporabljamo le preverjene, hitre teme in vtičnike, ki ne upočasnjujejo vaše uporabniške izkušnje.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- O nas Sekcija -->
+    <section class="kdo-smo">
+        <div class="container-half">
+            <h2>Mlada ekipa z moderno vizijo.</h2>
+            <p>Hyplux je mlada digitalna ekipa, ki združuje programiranje, dizajn in marketing v eno celovito spletno rešitev. <br><br> 
+                Verjamemo, da mora moderna spletna stran izgledati profesionalno, delovati hitro in podjetju pomagati ustvariti več zaupanja pri strankah. <br><br> 
+                Sodelujemo predvsem z manjšimi podjetji, lokalnimi storitvami in startupi, ki želijo izboljšati svojo online prisotnost brez nepotrebno visokih stroškov.</p>
+        </div>
+        <div class="container-half">
+            <img src="./assets/images/orbion-logo.svg" alt="Hyplux Logo" width="400" height="400">
+        </div>
+    </section>
 
-                <!-- Custom Code Rešitev -->
-                <div class="choice-card">
-                    <h3>Custom Code rešitve – Hitrost brez konkurence</h3>
-                    <p class="choice-intro">Za tiste, ki želite izstopati in zahtevate tehnično superiornost. Pišemo čisto kodo (HTML, CSS, JavaScript), ki je pisana na kožo vašim potrebam.</p>
-                    
-                    <div class="choice-features">
-                        <div class="feature">
-                            <h4>Bliskovito nalaganje</h4>
-                            <p>Brez odvečne kode WordPressa vaše strani dosegajo 100/100 na Google PageSpeed meritvah.</p>
-                        </div>
-                        <div class="feature">
-                            <h4>Vrhunska varnost</h4>
-                            <p>Brez baze podatkov in ranljivih vtičnikov je vaša stran praktično neprebojna za hekerske napade.</p>
-                        </div>
-                        <div class="feature">
-                            <h4>SEO prednost</h4>
-                            <p>Iskalniki obožujejo hitre, semantično pravilno napisane strani, kar vam prinaša prednost pred konkurenco.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Zakaj Hyplux? -->
+    <section class="why-hyplux-section">
+    <h2>Zakaj Hyplux?</h2>
+    
+    <div class="why-hyplux-grid">
+        <!-- Modern Design Card -->
+        <div class="why-hyplux-card">
+            <div class="why-hyplux-icon-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19 9v6M5 9v6M15 5h4M15 19h4M5 5h4M5 19h4"/>
+                </svg>
             </div>
+            <h3>Modern in luksuzen dizajn</h3>
+            <p>Minimalističen in premium izgled, prilagojen sodobnim trendom.</p>
         </div>
-    </section>
-
-    <!-- Zakaj Hyplux Sekcija -->
-    <section class="why-hyplux">
-        <div class="container">
-            <h2>Zakaj zaupati izdelavo strani ekipi Hyplux?</h2>
-            
-            <div class="why-grid">
-                <div class="why-item">
-                    <div class="why-number">1</div>
-                    <h3>Mobile-First dizajn</h3>
-                    <p>Več kot 60% obiska pride z mobilnih naprav. Vaša stran bo delovala brezhibno na vseh zaslonih.</p>
-                </div>
-                
-                <div class="why-item">
-                    <div class="why-number">2</div>
-                    <h3>Vgrajen SEO temelj</h3>
-                    <p>Vsaka stran, ki jo izdelamo, vključuje osnovno optimizacijo (meta opisi, pravilna struktura naslovov, kompresija slik).</p>
-                </div>
-                
-                <div class="why-item">
-                    <div class="why-number">3</div>
-                    <h3>Podpora in vzdrževanje</h3>
-                    <p>Po končanem projektu ne izginemo. Skrbimo za varnostne posodobitve in nemoteno delovanje.</p>
-                </div>
+ 
+        <!-- Speed Card -->
+        <div class="why-hyplux-card">
+            <div class="why-hyplux-icon-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 2"/>
+                    <path d="M12 2v3M12 19v3"/>
+                    <path d="M2 12h3M19 12h3"/>
+                    <path d="M5 5l2 2M17 17l2 2"/>
+                    <path d="M19 5l-2 2M7 17l-2 2"/>
+                </svg>
             </div>
+            <h3>Hitra izvedba</h3>
+            <p>Optimizirane spletne strani za hitro nalaganje in boljšo uporabniško izkušnjo.</p>
         </div>
-    </section>
+ 
+        <!-- Code & WordPress Card -->
+        <div class="why-hyplux-card">
+            <div class="why-hyplux-icon-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 3L5 9l4 6M15 3l4 6-4 6"/>
+                    <path d="M12 3v18"/>
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+            </div>
+            <h3>WordPress in custom coding</h3>
+            <p>Izdelujemo WordPress strani ali popolnoma custom coded rešitve v HTML, CSS in JavaScript.</p>
+        </div>
+ 
+        <!-- Affordable Card -->
+        <div class="why-hyplux-card">
+            <div class="why-hyplux-icon-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    <circle cx="12" cy="12" r="10" fill="none" opacity="0.3"/>
+                </svg>
+            </div>
+            <h3>Dostopno za mlada podjetja</h3>
+            <p>Kvalitetne spletne strani po dostopnejši ceni za manjša podjetja in startupe.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Naš Proces Sekcija -->
+     <!-- Naš Proces Sekcija -->
     <section class="process">
-        <div class="container">
-            <h2>Naš proces: Od ideje do objave</h2>
-            
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Svetovanje</h3>
-                    <p>Spoznamo vaše podjetje in cilje.</p>
+        <div class="hxs-wrap">
+            <p class="hxs-label">Proces</p>
+            <h2 class="hxs-h2">Kako poteka sodelovanje</h2>
+            <div class="hxs-grid">
+                <div class="hxs-line"></div>
+                <div class="hxs-card">
+                <div class="hxs-num-wrap">
+                    <span class="hxs-num">01</span>
                 </div>
-                
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Načrtovanje & Dizajn</h3>
-                    <p>Pripravimo strukturo, ki vodi obiskovalca do nakupa.</p>
+                <div class="hxs-title">Ideja in analiza</div>
+                <div class="hxs-desc">Pogovorimo se o vašem podjetju, ciljih in željah.</div>
                 </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Razvoj</h3>
-                    <p>Izberemo pravo tehnologijo (WP ali Custom) in oživimo dizajn.</p>
+                <div class="hxs-card">
+                <div class="hxs-num-wrap">
+                    <span class="hxs-num">02</span>
                 </div>
-                
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Testiranje & Objava</h3>
-                    <p>Preverimo hitrost, varnost in odpravimo morebitne napake.</p>
+                <div class="hxs-title">Dizajn</div>
+                <div class="hxs-desc">Pripravimo moderno vizualno podobo spletne strani.</div>
+                </div>
+                <div class="hxs-card">
+                <div class="hxs-num-wrap">
+                    <span class="hxs-num">03</span>
+                </div>
+                <div class="hxs-title">Razvoj</div>
+                <div class="hxs-desc">Stran izdelamo v WordPressu ali s custom coding pristopom.</div>
+                </div>
+                <div class="hxs-card">
+                <div class="hxs-num-wrap">
+                    <span class="hxs-num">04</span>
+                </div>
+                <div class="hxs-title">Optimizacija</div>
+                <div class="hxs-desc">Poskrbimo za hitrost, responsive prikaz in SEO osnove.</div>
                 </div>
             </div>
         </div>
@@ -226,9 +208,10 @@
 
     <!-- CTA Sekcija -->
     <section class="cta-final">
-        <div class="container">
-            <h2>Ste pripravljeni na novo spletno stran?</h2>
-            <p>Nudimo izdelavo spletnih strani v Sloveniji za mala in srednja podjetja.</p>
+        <div class="container center">
+            <h2>Naš cilj</h2>
+            <p>Naš cilj je pomagati podjetjem ustvariti spletno prisotnost, ki izgleda profesionalno, gradi zaupanje in podpira rast podjetja.
+               <br><br> Verjamemo, da dobra spletna stran danes ni več luksuz, ampak pomemben del vsake moderne blagovne znamke.</p>
             <div class="cta-buttons">
                 <a href="/kontakt.html" class="cta-button">Pridobite brezplačno ponudbo</a>
                 <p class="cta-alt">Ali pa nas kontaktirajte za neobvezujoč nasvet.</p>
@@ -236,6 +219,29 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40">
+                <h2>Hyplux</h2>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">O nas</a>
+                <a href="#services">Storitve</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/hyplux.studio/" target="_blank">Instagram</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2024 Hyplux. Vse pravice pridržane.</p>
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
