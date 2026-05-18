@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nas - Hyplux</title>
-    <meta name="description" content="Spoznaj Hyplux timčino. Kako smo se začeli, kaj počnemo in zakaj ljubimo web development.">
+    <meta name="description" content="Spoznaj Hyplux. Kako smo začeli, kaj počnemo in zakaj ljubimo web development.">
     <meta name="author" content="Hyplux">
     <meta name="keywords" content="o nas, hyplux, tim, web development, wordpress, slovenia">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#0c1222">
 
     <!-- Open Graph (Facebook, LinkedIn, itd.) -->
     <meta property="og:title" content="O nas - Hyplux">
-    <meta property="og:description" content="Spoznaj Hyplux timčino. Kako smo se začeli in kaj počnemo.">
-    <meta property="og:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
-    <meta property="og:url" content="https://hyplux.com/about.html">
+    <meta property="og:description" content="Spoznaj Hyplux. Kako smo začeli in kaj počnemo.">
+    <meta property="og:image" content="https://hyplux.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://hyplux.com/o-nas.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="sl_SI">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="O nas - Hyplux">
-    <meta name="twitter:description" content="Spoznaj Hyplux timčino.">
-    <meta name="twitter:image" content="https://hyplux.com/assets/images/orbion-logo.svg">
+    <meta name="twitter:description" content="Spoznaj Hyplux.">
+    <meta name="twitter:image" content="https://hyplux.com/assets/images/og-image.png">
 
     <!-- Canonical tag -->
-    <link rel="canonical" href="https://hyplux.com/about.html">
+    <link rel="canonical" href="https://hyplux.com/o-nas.html">
 
     <!-- hreflang (za angleško verzijo) -->
-    <link rel="alternate" hreflang="en" href="https://hyplux.com/about-en.html">
+    <link rel="alternate" hreflang="en" href="https://hyplux.com/en/about.html">
+    <link rel="alternate" hreflang="sl" href="https://hyplux.com/o-nas.html">
     
     <!-- Favicons -->
-    <link rel="icon" href="/assets/images/orbion-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/images/orbion-logo.svg" type="image/svg+xml">
     <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/assets/images/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-180.png">
@@ -74,22 +79,24 @@
             <div class="navbar" id="navbar">
                 <ul>
                     <li><a href="./index.html">Domov</a></li>
-                    <li><a href="./o-nas.html">O nas</a></li>
+                    <li><a href="./o-nas.html" style="color: rgb(167, 175, 184)">O nas</a></li>
                     <li><a href="./storitve.html">Storitve</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./projekti.html">Projekti</a></li>
                     <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
-        <a href="/en/index.html" class="lang-btn">En</a>
+        <a href="./en/about.html" class="lang-btn">En</a>
     </header>
      <!-- Hero Section -->
     <section class="hero-o-nas">
         <div class="container">
             <h1>Moderna digitalna ekipa za sodobne spletne strani.</h1>
             <p class="hero-subtitle">V Hyplux pomagamo manjšim podjetjem in startupom ustvariti moderne, hitre in profesionalne spletne strani, ki pustijo močan prvi vtis.</p>
-            <a href="storitve.html" class="cta-button">Poglej storitve</a>
-            <a href="kontakt.html" class="cta-button">Kontaktiraj nas</a>
+            <div class="cta-container">
+                <a href="storitve.html" class="cta-button">Poglej storitve</a>
+                <a href="kontakt.html" class="cta-button">Kontaktiraj nas</a>
+            </div>
         </div>
     </section>
 
@@ -102,7 +109,10 @@
                 Sodelujemo predvsem z manjšimi podjetji, lokalnimi storitvami in startupi, ki želijo izboljšati svojo online prisotnost brez nepotrebno visokih stroškov.</p>
         </div>
         <div class="container-half">
-            <img src="./assets/images/orbion-logo.svg" alt="Hyplux Logo" width="400" height="400">
+            <video width="400" height="400" autoplay muted loop>
+                <source src="./assets/images/0001-0200.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 
@@ -213,7 +223,7 @@
             <p>Naš cilj je pomagati podjetjem ustvariti spletno prisotnost, ki izgleda profesionalno, gradi zaupanje in podpira rast podjetja.
                <br><br> Verjamemo, da dobra spletna stran danes ni več luksuz, ampak pomemben del vsake moderne blagovne znamke.</p>
             <div class="cta-buttons">
-                <a href="/kontakt.html" class="cta-button">Pridobite brezplačno ponudbo</a>
+                <a href="kontakt.html" class="cta-button">Pridobite brezplačno ponudbo</a>
                 <p class="cta-alt">Ali pa nas kontaktirajte za neobvezujoč nasvet.</p>
             </div>
         </div>
@@ -227,21 +237,21 @@
             </div>
 
             <div class="footer-links">
-                <a href="#about">O nas</a>
-                <a href="#services">Storitve</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Kontakt</a>
+                <a href="./o-nas.html">O nas</a>
+                <a href="./storitve.html">Storitve</a>
+                <a href="./projekti.html">Projekti</a>
+                <a href="./kontakt.html">Kontakt</a>
             </div>
 
             <div class="footer-social">
                 <a href="https://www.instagram.com/hyplux.studio/" target="_blank">Instagram</a>
-                <a href="#" target="_blank">GitHub</a>
+                <a href="https://github.com/Timbo903/orbion-website/tree/main/hyplux.com" target="_blank">GitHub</a>
             </div>
         </div>
         <p class="footer-copy">&copy; 2024 Hyplux. Vse pravice pridržane.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./navbar-script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Hyplux - Send an Inquiry</title>
+    <meta name="description" content="Contact Hyplux. Send an inquiry for website development. Quick, secure, and no obligation.">
+    <meta name="author" content="Hyplux">
+    <meta name="keywords" content="contact, inquiry, hyplux, websites, web development">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#0c1222">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Contact | Hyplux">
+    <meta property="og:description" content="Send an inquiry for website development. Hyplux will contact you as soon as possible.">
+    <meta property="og:image" content="https://hyplux.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://hyplux.com/en/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | Hyplux">
+    <meta name="twitter:description" content="Send an inquiry for website development.">
+    <meta name="twitter:image" content="https://hyplux.com/assets/images/og-image.png">
+
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://hyplux.com/en/contact.html">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="sl" href="https://hyplux.com/kontakt.html">
+    <link rel="alternate" hreflang="en" href="https://hyplux.com/en/contact.html">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/images/orbion-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="../assets/images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../assets/images/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon-180.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (Schema.org) - ContactPoint -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hyplux",
+        "url": "https://hyplux.com",
+        "logo": "https://hyplux.com/assets/images/orbion-logo.svg",
+        "description": "Modern website creation",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "info@hyplux.com"
+        },
+        "sameAs": [
+            "https://instagram.com/hyplux",
+            "https://instagram.com/hyperluxe_"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="../assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40">
+                <span>Hyplux</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="navbar" id="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#form-section" style="color: rgb(167, 175, 184)">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="../kontakt.html" class="lang-btn">Sl</a>
+    </header>
+    <section id="hero" class="hero-kontakt">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get in touch with us</h1>
+                <p>Fast, professional, and tailored to your needs. Check out our projects and send an inquiry today.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="form-section">
+            <h2>Contact us</h2>
+            <p>Send us a message and we'll get back to you as soon as possible.</p>
+            <form name="contact" method="POST" data-netlify="true" action="/zahvala.html" class="contact-form">
+                <!-- Hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <input type="hidden" name="subject" data-remove-prefix 
+                value="Povpraševanje od %{name}" />
+
+                <input type="text" id="name" name="name" placeholder="Ime" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Sporočilo" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p style="margin-top: 30px; font-size: 0.95rem;">
+                Alternatively, you can contact us directly at:<br><br> email: <strong>info@hyplux.com</strong> <br><br> phone: <strong>+386 70 254 442</strong>
+            </p>
+            <div class="icons">
+                <!-- Instagram -->
+<a href="https://instagram.com/hyplux.studio/" class="social-icon" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="#ffffff"
+     stroke-width="1.8"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+  <path d="M16 11.37a4 4 0 1 1-7.75 1.26 4 4 0 0 1 7.75-1.26z"></path>
+  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+</svg>
+</a>
+
+<!-- GitHub -->
+<a href="https://github.com/Timbo903/orbion-website/tree/main" class="social-icon" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="#ffffff"
+     stroke-width="1.8"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 
+           6v-3.87a3.37 3.37 0 0 
+           0-.94-2.61c3.14-.35 
+           6.44-1.54 6.44-7A5.44 
+           5.44 0 0 0 20 4.77 
+           5.07 5.07 0 0 0 19.91 
+           1S18.73.65 16 2.48a13.38 
+           13.38 0 0 0-7 0C6.27.65 
+           5.09 1 5.09 1A5.07 5.07 
+           0 0 0 5 4.77a5.44 5.44 
+           0 0 0-1.5 3.78c0 5.42 
+           3.3 6.61 6.44 7A3.37 
+           3.37 0 0 0 9 18.13V22">
+  </path>
+</svg>
+</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/orbion-logo.svg" alt="Hyplux Logo" width="40" height="40">
+                <h2>Hyplux</h2>
+            </div>
+
+            <div class="footer-links">
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/hyplux.studio/" target="_blank">Instagram</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2024 Hyplux. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../navbar-script.js"></script>
+
+</body>
+</html>
