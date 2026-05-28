@@ -167,7 +167,7 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/NovejseOzadje.png');
+    background-image: url('./assets/images/NovejseOzadje.webp');
     background-size: cover;
     background-position: center +65%;
     background-attachment: fixed;
@@ -176,7 +176,7 @@ header {
 .hero-storitve {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/SeNovejseOzadje.png');
+    background-image: url('./assets/images/SeNovejseOzadje.webp');
     background-size: cover;
     background-position: center -133%;
     background-attachment: fixed;
@@ -185,7 +185,7 @@ header {
 .hero-o-nas {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/NovoOzadje.png');
+    background-image: url('./assets/images/NovoOzadje.webp');
     background-size: cover;
     background-position: center +65%;
     background-attachment: fixed;
@@ -194,7 +194,7 @@ header {
 .hero-kontakt {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/NovoOzadje.png');
+    background-image: url('./assets/images/NovoOzadje.webp');
     background-size: cover;
     background-position: center -130%;
     background-attachment: fixed;
@@ -1121,10 +1121,6 @@ header {
         font-size: 27px;
     }
 
-    .logo img {
-        width: 30px;
-        height: 30px;
-    }
 
     .logo h1 {
         font-size: 1.3rem;
@@ -1437,7 +1433,7 @@ header {
 }
 
 .cta-final {
-    background-color: #192639;
+    background-color: #101a2b;
 }
 
 .cta-final p {
