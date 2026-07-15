@@ -580,7 +580,7 @@ header {
 
 /* Footer */
 .footer {
-    background-color: #1a1a2e;
+    background-color: rgba(0, 0, 0, 0.808);
     color: white;
     padding: 40px 20px 20px 20px;
     font-family: 'Space Grotesk', sans-serif;
@@ -622,7 +622,7 @@ header {
 }
 
 .footer-links a:hover {
-    color: #0066ff70;
+    color: #6d758570;
 }
 
 .footer-social {
@@ -1980,7 +1980,7 @@ header {
     padding: 190px 200px;
     justify-content: center;
     gap: 30px;
-    background-color: #212138;
+    background-color: #0f172a;
 }
 
 .form-section {
