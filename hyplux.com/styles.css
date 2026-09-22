@@ -167,7 +167,7 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/NovejseOzadje.webp');
+    background-image: url('./assets/images/background-purple-line.webp');
     background-size: cover;
     background-position: center +65%;
     background-attachment: fixed;
@@ -185,7 +185,7 @@ header {
 .hero-o-nas {
     text-align: center;
     padding: 100px 20px;
-    background-image: url('./assets/images/NovoOzadje.webp');
+    background-image: url('./assets/images/background-green-line.webp');
     background-size: cover;
     background-position: center +65%;
     background-attachment: fixed;
