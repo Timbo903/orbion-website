@@ -169,7 +169,7 @@ header {
     padding: 100px 20px;
     background-image: url('./assets/images/background-purple-line.webp');
     background-size: cover;
-    background-position: center +65%;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -178,7 +178,7 @@ header {
     padding: 100px 20px;
     background-image: url('./assets/images/SeNovejseOzadje.webp');
     background-size: cover;
-    background-position: center -133%;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -2345,5 +2345,13 @@ header {
     .hx-faq-a p {
         padding: 0 18px 16px;
         font-size: 0.85rem;
+    }
+}
+
+
+/* Izklopi fixed samo na iOS napravah (WebKit-based) */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
     }
 }
