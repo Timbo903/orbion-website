@@ -2351,7 +2351,14 @@ header {
 
 /* Izklopi fixed samo na iOS napravah (WebKit-based) */
 @supports (-webkit-touch-callout: none) {
-    .hero {
+    .hero,
+    .hero-storitve,
+    .hero-o-nas,
+    .hero-kontakt,
+    .services,
+    .why-hyplux,
+    .why-hyplux-section,
+    .cta-section {
         background-attachment: scroll;
     }
 }
